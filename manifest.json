@@ -1,0 +1,33 @@
+{
+    "name": "盘古开天",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "一款用于Chrome/Eagle插件的综合性功能新标签页管理工具",
+    "icons": {
+        "64": "/assets/img/64.png"
+    },
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "history",
+        "unlimitedStorage",
+        "contextMenus",
+        "storage",
+        "topSites",
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background":{
+       "scripts":[
+          "/assets/js/background.js"
+       ]
+    },
+    "chrome_url_overrides":{
+       "newtab":"pages/index.html"
+    },
+    "browser_action":{
+       "default_icon":"/assets/img/64.png",
+       "default_title": "一款用于Chrome/Eagle插件的综合性功能新标签页管理工具"
+    }
+ }
